@@ -1,0 +1,3 @@
+class Solution:
+    def destCity(self, paths: List[List[str]]) -> str:
+        return next(city[1] for city in paths if city[1] not in {path[0] for path in paths})
